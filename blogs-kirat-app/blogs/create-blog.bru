@@ -1,0 +1,22 @@
+meta {
+  name: create-blog
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/api/v1/blog
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjNjgxMWYzOC0zMDFkLTQ2MzktOTgwNS01NDU4NjZhZjYyMzUiLCJpYXQiOjE3MjgzMjE2MTksImV4cCI6MTcyODkyNjQxOX0.znCMCbpOoSNkd3fvfPnkjSBflTWkFKBfDM_wKrVso0A
+}
+
+body:json {
+  {
+    "title" : "hello brother" , 
+    "content" : "hello"
+  }
+}

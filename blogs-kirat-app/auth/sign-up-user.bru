@@ -1,0 +1,21 @@
+meta {
+  name: sign-up-user
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/api/v1/sign-up
+  body: json
+  auth: none
+}
+
+body:json {
+  
+  {
+    "firstName" : "rohit" , 
+    "lastName" : "sharma" , 
+    "email" : "test2@gmail.com" , 
+    "password" : "Ashugaikwad1@"
+  }
+}
